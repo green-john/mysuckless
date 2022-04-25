@@ -2,10 +2,9 @@
 Need to install
 
 ```
-base-devel pamixer pulseaudio python vim wpa_suplicant
+pacman -S git xorg-server xorg-xinit xf86-video-intel noto-fonts ttf-ubuntu-font-family noto-fonts-emoji picom firefox pamixer pulseaudio python networkmanager networkmanager-runit zsh
 ```
 
-pacstrap
-```
-runit elogind-runit linux linux-firmware sudo vim
-```
+Change libfxt for libftx-bgra
+
+Add arch files
