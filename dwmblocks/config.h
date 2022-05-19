@@ -9,8 +9,8 @@ static const Block blocks[] = {
 	/* {"",	"sb-price btc Bitcoin 💰",				9000,	21}, */
 	{"",	"sb-battery",	5,	3},
 	{"",	"sb-clock",	60,	1},
+	{"",	"sb-internet",	5,	4},
 	{"",	"sb-volume",	0,	10},
-	/*{"",	"sb-internet",	5,	4},*/
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.

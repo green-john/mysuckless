@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "UbuntuMono:size=13:antialias=true:autohint=true";
 /* Spare fonts */
-static char *font2[] = {"JoyPixels:pixelsize=14:antialias=true:autohint=true",};
+static char *font2[] = {"JoyPixels:size=11:antialias=true:autohint=true",};
 
 static int borderpx = 2;
 
@@ -95,6 +95,9 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
+/* bg opacity */
+float alpha = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -200,6 +203,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY,	        XK_i,           zoom,           {.f = +1} }, 
+	{ MODKEY,     		XK_o,           zoom,           {.f = -1} },
 };
 
 /*
