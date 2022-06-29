@@ -177,6 +177,7 @@ int getstatus(char *str, char *last)
         if (i == LENGTH(blocks) - 1)
             strcat(str, " ");
     }
+    strcat(str, "     ");
 	str[strlen(str)-1] = '\0';
 	return strcmp(str, last);//0 if they are the same
 }
