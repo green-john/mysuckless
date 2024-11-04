@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "UbuntuMono:size=13:antialias=true:autohint=true";
+static char *font = "UbuntuMono:size=11:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {"JoyPixels:size=11:antialias=true:autohint=true",};
 
@@ -97,7 +97,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.7;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
